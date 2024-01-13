@@ -1,8 +1,6 @@
 package SpringSecurity.entities;
 
 import jakarta.persistence.*;
-
-
 import java.util.Objects;
 
 @Entity
@@ -14,6 +12,9 @@ public class Product {
     private String nome;
     private Double preco;
 
+    public Product() {
+
+    }
     public Product(Long id, String nome, Double preco) {
         this.id = id;
         this.nome = nome;
